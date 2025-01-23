@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Courier Prime', serif;
-    src: url('.../Fonts/Courier_Prime/CourierPrime-Regular.ttf') format('truetype');
+    src: url('Fonts/Courier_Prime/CourierPrime-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
