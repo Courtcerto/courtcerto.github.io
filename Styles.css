@@ -98,6 +98,6 @@ a:active {
       }
     
     #NavBar section {
-    flex-basis: 4em;
+    flex-basis: 100%;
 }
 }
