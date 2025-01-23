@@ -92,8 +92,5 @@ a:active {
 
 /* MOBILE VERSION */
 @media only screen and (max-width: 600px) {
-    * {
-        width: 70%;
 
-      }
 }
