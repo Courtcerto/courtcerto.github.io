@@ -96,4 +96,8 @@ a:active {
         width: 80%;
 
       }
+    
+    #NavBar section {
+    flex-basis: 3em;
+}
 }
