@@ -102,11 +102,12 @@ a:active {
     padding-left: 20px; /* Adds padding to align bullets/numbers properly */
     text-align: left; /* Ensures the list items are aligned to the left */
     list-style-position: outside; /* Positions bullets/numbers outside the text */
+    margin-top: 2px;
 }
 
 .Recipe li {
     text-align: left; /* Aligns each list item text to the left */
-    margin: 5px 0; /* Adds spacing between list items */
+    margin: 2px 0; /* Adds spacing between list items */
 }
 
 .Recipe h2{
