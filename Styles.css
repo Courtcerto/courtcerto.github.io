@@ -89,3 +89,29 @@ a:hover {
 a:active {
     color: var(--darkorange);
 }
+
+.Recipe {
+    margin: 10px 20px; /* Slight margin around the Recipe section */
+    text-align: left; /* Aligns text content inside .Recipe to the left */
+    width: auto;
+}
+
+.Recipe ul,
+.Recipe ol {
+    margin-left: 50px; /* Indents the lists slightly for better readability */
+    padding-left: 20px; /* Adds padding to align bullets/numbers properly */
+    text-align: left; /* Ensures the list items are aligned to the left */
+    list-style-position: outside; /* Positions bullets/numbers outside the text */
+}
+
+.Recipe li {
+    text-align: left; /* Aligns each list item text to the left */
+    margin: 5px 0; /* Adds spacing between list items */
+}
+
+.Recipe h2{
+    text-align: left;
+    margin: 5px 0 0 40px;
+    padding: 10px 5px;
+    justify-content: left;
+    align-items: left;
