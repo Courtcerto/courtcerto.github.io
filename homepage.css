@@ -39,7 +39,7 @@
     display:inline-block;
 }
 
-.dropdown li {
+.dropdown .dd-contents {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -49,7 +49,7 @@
     z-index: 1;
   }
 
-  .dropdown:hover li {
+  .dropdown:hover .dd-contents {
     display: block;
   }
 
