@@ -33,6 +33,27 @@
     list-style-type: none;
 }
 
+/* Create dropdowns for recipe categories */
+.dropdown {
+    position: relative;
+    display:inline-block;
+}
+
+.dropdown li {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover li {
+    display: block;
+  }
+
+/* Define how different viewports arrange flex items */
 @media (min-width: 600px) {
     .container {
         flex-wrap: wrap;
