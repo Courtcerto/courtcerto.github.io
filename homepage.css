@@ -54,6 +54,6 @@
     
     .container section {
         flex-basis: 300px;
-        min-width: 250px;
+        min-width: 249px;
     }
 }
