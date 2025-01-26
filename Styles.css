@@ -39,44 +39,6 @@ header p{
     font-style: italic;
 }
 
-#NavBar {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-}
-
-#NavBar div{
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-    width: 80%;
-}
-
-#NavBar section {
-    flex-basis: 300px;
-}
-
-#NavBar h2 {
-    padding: 10px 0;
-    border: 2px solid var(--cream);
-    background-color: var(--darkgreen);
-    margin: 20px 5px;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2em;
-    width: 100%; /* Ensures the parent div spans the full width */
-}
-
-#NavBar li {
-    text-align: left;
-    margin: 10px 0;
-    font-size: 1.3em;
-    list-style-type: none;
-}
-
 a {
     text-decoration: none;
     
