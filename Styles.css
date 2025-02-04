@@ -39,6 +39,19 @@ header p{
     font-style: italic;
 }
 
+header nav {
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+}
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    font-size: 2rem;
+    border-bottom: 2px solid darkorange;
+}
+
 a {
     text-decoration: none;
     
@@ -79,3 +92,4 @@ a:active {
     padding: 10px 5px;
     justify-content: left;
     align-items: left;
+}
