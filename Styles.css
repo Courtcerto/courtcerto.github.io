@@ -15,46 +15,44 @@
 
 * {
     text-align: center;
-    background-color: var(--lightgreen);
     color: var(--cream);
     text-shadow: 2px 2px 2px black;
     font-family: 'Courier Prime', monospace;
   }
 
+html {
+    background-color: var(--lightgreen);
+}
+
 header {
-    margin: 30px 0 40px 0;
-    justify-content: center;
-  }
+    margin: 30px auto 40px auto;
+    display: grid;
+}
 
 header h1{
-    display:inline-block;
+    display: inline-block;
+    margin: 20px auto;
     padding: 0 30px;
     font-size: 3em;
     border-bottom: 3px solid var(--darkorange);
 }
 header p{
-    color: black;
-    text-shadow: 0px 0px 1px #283618;
+    color: var(--cream);
     font-size: 20px;
     font-style: italic;
+    background-color: var(--darkgreen);
+
+    margin: 10px auto;
+    padding: 10px 20px;
 }
 
-header nav {
-    display: flex;
-    justify-content: left;
-    margin: 20px;
-}
-nav li{
+header iframe {
     display: inline-block;
-    list-style-type: none;
-    padding: 5px;
-    font-size: 2rem;
-    border-bottom: 2px solid darkorange;
+    margin: auto;
 }
 
 a {
     text-decoration: none;
-    
 }
 
 a:hover {
@@ -63,6 +61,36 @@ a:hover {
 
 a:active {
     color: var(--darkorange);
+}
+/* ------ NAV BAR ------ */
+
+body > nav {
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav a {
+    padding: 10px 20px;
+    font-size: 2rem;
+    border: 2px solid var(--cream);
+    background-color: var(--darkgreen);
+}
+
+nav a:hover {
+    color: var(--cream);
+    background-color: var(--lightorange);
+}
+
+nav a:active {
+    color: var(--cream);
+    border-color: var(--lightorange);
+    background-color: var(--darkorange);
 }
 
 .Recipe {
@@ -93,3 +121,4 @@ a:active {
     justify-content: left;
     align-items: left;
 }
+
