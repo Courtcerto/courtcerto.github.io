@@ -1,9 +1,18 @@
 :root {
-    --lightgreen: #606C38;
-    --darkgreen: #283618;
-    --cream: #FEFAE0;
-    --lightorange: #DDA15E;
-    --darkorange: #BC6C25;
+    --white: #FFFCEB;
+    --black: #080D0A;
+    --shadow: #1a1c17; 
+    --blue: #3262C8;
+    --blue-light: #75C0D1;
+    --green-light: #83C3A4;
+    --green-med: #41785e;
+    --green-dark: #254C39;
+    --yellow-light: #FEEABC;
+    --yellow-med: #FDE74C;
+    --yellow-dark: #F2D602;
+    --attention: #DB5461;
+    --attention-dark: #D84654;
+    --red-light: #E3655B;
 }
 
 @font-face {
@@ -15,13 +24,12 @@
 
 * {
     text-align: center;
-    color: var(--cream);
-    text-shadow: 2px 2px 2px black;
+    color: var(--black);
     font-family: 'Courier Prime', monospace;
-  }
+}
 
 html {
-    background-color: var(--lightgreen);
+    background-color: var(--white);
 }
 
 header {
@@ -34,15 +42,12 @@ header h1{
     margin: 20px auto;
     padding: 0 30px;
     font-size: 3em;
-    border-bottom: 3px solid var(--darkorange);
+    border-bottom: 3px solid var(--yellow-dark);
 }
 
 header p{
-    color: var(--cream);
     font-size: 20px;
     font-style: italic;
-    background-color: var(--darkgreen);
-
     margin: 10px auto;
     padding: 10px 20px;
 }
@@ -54,14 +59,15 @@ header iframe {
 
 a {
     text-decoration: none;
+    color: var(--blue)
 }
 
 a:hover {
-    color: var(--lightorange);
+    color: var(--attention);
 }
 
 a:active {
-    color: var(--darkorange);
+    color: var(--attention-dark);
 }
 
 /* ------ NAV BAR ------ */
@@ -80,20 +86,23 @@ nav li{
 nav a {
     padding: 10px 20px;
     font-size: 2rem;
-    border: 2px solid var(--cream);
-    background-color: var(--darkgreen);
+    color: var(--white);
+    background-color: var(--green-med);
+    border: 2px solid var(--green-dark);
+    
 }
 
 nav a:hover {
-    color: var(--cream);
-    background-color: var(--lightorange);
+    color: var(--black);
+    background-color: var(--yellow-med);
 }
 
 nav a:active {
-    color: var(--cream);
-    border-color: var(--lightorange);
-    background-color: var(--darkorange);
+    color: var(--white);
+    border-color: var(--yellow-dark);
+    background-color: var(--yellow-dark);
 }
+
 
 .Recipe {
     margin: 10px 20px; /* Slight margin around the Recipe section */
