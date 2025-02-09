@@ -7,35 +7,63 @@
     <link rel="stylesheet" type="text/css" href="../Styles.css">
     <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
 </head>
-<body class="recipe">
+<body>
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
         </ul>
     </nav>
-    <h1 id="recipe-title">Recipe Name</h1>
-    <div id="preview">
-        <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/8VVpBRlGQ-U?si=ROVVBTG23kE8ZGfs"
-        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-    <p id="recipe-description">
-        Recipe description with <a href="https://www.google.com">demo link</a>
-    </p>
-    <div id="ingredients">
-        <h2>Ingredients</h2>
-        <ul>
-            <li>Uno</li>
-            <li>Dos</li>
-            <li>Tres</li>
-        </ul>
-    </div>
-    <div id="instructions">
-        <h2>Instructions</h2>
-        <ol>
-            <li>Live</li>
-            <li>Laugh</li>
-            <li>Love</li>
-        </ol>
-    </div>
+    <main class="recipe">
+        <h1 id="recipe-title">Recipe Name</h1>
+        <div id="recipe-times">
+            <span><em>prep time:</em> 10 minutes</span>
+            <span><em>cook time:</em> 20 minutes</span>
+            <span><em>total time:</em> 30 minutes</span>
+        </div>
+        <div id="servings">
+            <span><em>Serves:</em> <span class="amount">8</span></span>
+            <span>Change servings: - 1x +</span>
+        </div>
+        <div id="preview">
+            <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/8VVpBRlGQ-U?si=ROVVBTG23kE8ZGfs"
+            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p id="recipe-description">
+            Recipe description with <a href="https://www.google.com">demo link</a>
+        </p>
+        <div id="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <span class="amount">1</span> tbsp sugar
+                </li>
+                <li>
+                    <span class="amount">2</span> oz spice
+                </li>
+                <li>
+                    <span class="amount">3</span> cups everything nice
+                </li>
+            </ul>
+        </div>
+
+        <div id="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>
+                    Grind the beans <em>(grind 'em up in that grindin' machine)</em>.
+                </li>
+                <li>
+                    Steam the milk <em>(hot and bubbly, smooth like silk)</em>.
+                </li>
+                <li>
+                    Pour the coffee <em>(smell that coffee wafting off of me)</em>.
+                </li>
+                <li>
+                    Serve it up <em>(put a lid on that coffee cup)</em>
+                </li>
+            </ol>
+        </div>
+    </main>
 </body>
 </html>
