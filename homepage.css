@@ -33,6 +33,18 @@
     list-style-type: none;
 }
 
+header {
+    margin: 30px auto 40px auto;
+    display: grid;
+}
+
+header p{
+    font-size: 20px;
+    font-style: italic;
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+
 /* Create dropdowns for recipe categories */
 .dropdown {
     position: relative;
