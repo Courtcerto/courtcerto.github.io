@@ -4,9 +4,9 @@
     --shadow: #1a1c17; 
     --blue: #3262C8;
     --blue-light: #75C0D1;
-    --green-light: #83C3A4;
+    --green-light: #75BD9A;
     --green-med: #41785e;
-    --green-dark: #254C39;
+    --green-dark: #2E6048;
     --yellow-light: #FEEABC;
     --yellow-med: #FDE74C;
     --yellow-dark: #F2D602;
@@ -59,12 +59,15 @@ a:active {
 nav {
     display: flex;
     justify-content: left;
-    margin: 20px;
+    margin: 20px 0;
 }
-
+nav ul {
+    padding-inline-start: 0;
+}
 nav li{
     display: inline-block;
     list-style-type: none;
+    
 }
 
 nav a {
@@ -73,6 +76,7 @@ nav a {
     color: var(--white);
     background-color: var(--green-med);
     border: 2px solid var(--green-dark);
+    border-radius: 16px;
     
 }
 
@@ -89,22 +93,31 @@ nav a:active {
 
 /* ------ BODY GRID ------ */
 
+.recipe header {
+    grid-area: header;
+    background-color: var(--green-med);
+    display:flex;
+    flex-direction: column;
+    color: var(--white);
+    padding: 12px 0;
+    border-radius: 20px 20px 0 0;
+}
+
 #recipe-title {
-    grid-area: title;
     margin: 0 auto;
     text-align: center;
 }
 
-#recipe-times {
+#times {
     display: flex;
     flex-direction: row;
     grid-area: info;
-    margin: 20px auto;
+    margin: 16px auto 0;
     flex-wrap: wrap;
     text-align: center;
 }
 
-#recipe-times > span {
+#times > span {
     display: inline-block;
     padding: 4px 10px;
     margin: auto;
@@ -113,35 +126,55 @@ nav a:active {
 
 #servings {
     grid-area: servings;
-    margin: auto;
-    margin-bottom: 20px;
+    display: flex;
+    background-color: var(--green-light);
+    color: var(--black);
+    padding: 16px;
 }
-#servings > span {
+
+#servings > div {
+    margin: auto;
+}
+
+#servings > div > span {
     display: inline-block;
-    padding: 0 6px;
+    padding: 0 20px;
     margin: auto;
 }
 
 #preview {
     grid-area: preview;
-    margin: 0 auto;
+    display: flex;
+    background-color: var(--yellow-light);
+    padding: 10px;
+}
+#preview > iframe {
+    margin: auto;
 }
 
 #recipe-description {
     grid-area: description;
-    margin: 0 auto;
+    background-color: var(--yellow-light);
+    padding: 6px;
+}
+
+#recipe-description > p {
+    text-align: center;
+    margin: auto;
 }
 
 #ingredients {
     grid-area: ingredients;
-    margin: 0 auto;
-    width: 90%;
+    background-color: var(--green-dark);
+    color: var(--white);
 }
 
 #instructions {
     grid-area: instructions;
-    margin: 0 auto;
-    width: 90%;
+    background-color: var(--green-med);
+    color:var(--white);
+    padding: 0 40px 10px;
+    border-radius: 0 0 20px 20px;;
 }
 
 .recipe h2 {
@@ -160,16 +193,10 @@ nav a:active {
         margin: auto;
         max-width: 1000px;
         grid-template-columns: auto auto;
-        gap: 20px 20px;
-        grid-template-areas:"title title"
-                            "info info"
+        grid-template-areas:"header header"
                             "servings servings"
                             "ingredients preview"
                             "ingredients description"
                             "instructions instructions";
-    }
-
-    #recipe-times, #servings {
-        margin: 0 auto;
     }
 }

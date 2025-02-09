@@ -14,25 +14,31 @@
         </ul>
     </nav>
     <main class="recipe">
-        <h1 id="recipe-title">Recipe Name</h1>
-        <div id="recipe-times">
-            <span><em>prep time:</em> 10 minutes</span>
-            <span><em>cook time:</em> 20 minutes</span>
-            <span><em>total time:</em> 30 minutes</span>
-        </div>
-        <div id="servings">
-            <span><em>Serves:</em> <span class="amount">8</span></span>
-            <span>Change servings: - 1x +</span>
-        </div>
-        <div id="preview">
+        <header>
+            <h1 id="recipe-title">Recipe Name</h1>
+            <div id="times">
+                <span><em>prep time:</em> <strong>10 minutes</strong></span>
+                <span><em>cook time:</em> <strong>20 minutes</strong></span>
+                <span><em>total time:</em> <strong>30 minutes</strong></span>
+            </div>
+        </header>
+        <section id="servings">
+            <div>
+                <span><em>Serves:</em> <strong class="amount">8</strong></span>
+                <span>Change servings: - 1x +</span>
+            </div>
+        </section>
+        <section id="preview">
             <iframe width="560" height="315"
             src="https://www.youtube.com/embed/8VVpBRlGQ-U?si=ROVVBTG23kE8ZGfs"
             title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <p id="recipe-description">
-            Recipe description with <a href="https://www.google.com">demo link</a>
-        </p>
-        <div id="ingredients">
+        </section>
+        <section id="recipe-description">
+            <p>
+                Recipe description with <a href="https://www.google.com">demo link</a>.
+            </p>
+        </section>
+        <section id="ingredients">
             <h2>Ingredients</h2>
             <ul>
                 <li>
@@ -45,9 +51,9 @@
                     <span class="amount">3</span> cups everything nice
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <div id="instructions">
+        <section id="instructions">
             <h2>Instructions</h2>
             <ol>
                 <li>
@@ -63,7 +69,7 @@
                     Serve it up <em>(put a lid on that coffee cup)</em>
                 </li>
             </ol>
-        </div>
+        </section>
     </main>
 </body>
 </html>
